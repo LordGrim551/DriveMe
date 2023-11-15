@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    tools:context=".SplashScreen">
+
+
+
+
+    <ImageView
+        android:id="@+id/motionLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/elemento_circular_a"
+        android:src="@drawable/elemento_circular_a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pantom"
+        android:text="@string/eslogan"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pantom"
+        android:text="@string/eslogan2"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icono_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/motionLayout"
+        app:layout_constraintEnd_toEndOf="@+id/motionLayout"
+        app:layout_constraintStart_toStartOf="@+id/motionLayout"
+        app:layout_constraintTop_toTopOf="@+id/motionLayout" />
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icono_logo"
+        app:tint="#000000"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="446dp"
+        app:layout_constraintBottom_toBottomOf="@+id/motionLayout"
+        app:layout_constraintEnd_toEndOf="@+id/motionLayout"
+        app:layout_constraintStart_toStartOf="@+id/motionLayout"
+        app:layout_constraintTop_toTopOf="@+id/motionLayout"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="201dp"
+        android:layout_height="91dp"
+        android:fontFamily="@font/pantom"
+        android:text="DRIVEME"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:textSize="120px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motionLayout" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

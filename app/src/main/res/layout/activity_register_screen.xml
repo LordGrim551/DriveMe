@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".RegisterScreen">
+
+    <ImageView
+        android:id="@+id/backgroundRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:scaleType="centerCrop" />
+
+    <com.example.driveme.SnowfallView
+        android:id="@+id/snowfallView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textColorHint="@color/md_theme_light_onPrimary"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/md_theme_light_onPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:passwordToggleTint="#FFFFFF"
+        app:startIconDrawable="@drawable/icon_person"
+        app:startIconTint="@color/md_theme_light_onPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_light_onSurfaceVariant"
+            android:drawableTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:hint="USER"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textColorHint="@color/md_theme_light_onPrimary"
+            android:textStyle="bold"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textColorHint="@color/md_theme_light_onPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:endIconCheckable="true"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/md_theme_light_onPrimary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/md_theme_light_onPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/textField3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        app:startIconDrawable="@drawable/icon_password"
+        app:startIconTint="@color/md_theme_light_onPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_light_onSurfaceVariant"
+            android:fontFamily="sans-serif-light"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textColorHint="@color/md_theme_light_onPrimary"
+            android:textStyle="bold"
+            app:boxStrokeColor="#FFFFFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textColorHint="@color/md_theme_light_onPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:endIconCheckable="false"
+        app:endIconTint="@color/md_theme_light_onPrimary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/md_theme_light_onPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:startIconTint="@color/md_theme_light_onPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_light_onSurfaceVariant"
+            android:fontFamily="sans-serif-light"
+            android:hint="EMAIL ADDRESS"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textColorHint="@color/md_theme_light_onPrimary"
+            android:textStyle="bold"
+            app:boxStrokeColor="#FFFFFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="425dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/elemento_fondo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="240dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/pantom"
+        android:text="DRIVEME"
+        android:textAlignment="center"
+        android:textColor="#7564D4"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="83dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="52dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="442dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:fontFamily="@font/pantom"
+        android:onClick="changeLogin"
+        android:text="LOG IN"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/login_icon"
+        app:layout_constraintBottom_toTopOf="@+id/extended_fab2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab2"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:fontFamily="@font/pantom"
+        android:onClick="registerButton"
+        android:text="REGISTER"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/baseline_app_registration_24"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/textField2"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/textField2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.683" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/pantom"
+        android:paddingTop="25dp"
+        android:text="@string/AutoriaLicencia"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/snowfallView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        app:layout_constraintVertical_bias="0.72">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="442dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="63dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_directions_car_24"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="384dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
